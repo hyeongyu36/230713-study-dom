@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>데이터 가져오기</title>
+  </head>
+  <body>
+    <button data-mov="2023">영화 개봉년도</button>
+    <button data-mov="7">영화 개봉월</button>
+    <script>
+      const btnEls = document.querySelectorAll("button");
+      // console.log(btnEls);
+      btnEls.forEach(function (el) {
+        // console.log(el.dataset)
+        console.log(el.dataset);
+        console.log(el.dataset.mov);
+        el.dataset.mov = 0;
+      });
+    </script>
+  </body>
+</html>
+
+<!-- dom트리 : 웹 문서에 있는 요소들 간 부모, 자식관계를 계층으로 표시한 것 -->
