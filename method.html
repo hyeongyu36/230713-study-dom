@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메서드</title>
+    <style>
+      .green {
+        color: yellowgreen;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.naver.com">네이버</a>
+    <script>
+      var aEl = document.querySelector("a");
+      // console.log(aEl);
+      var href = aEl.getAttribute("href");
+      // console.log(href);
+      aEl.setAttribute("href", "http://www.google.com");
+      // console.log(aEl);
+      aEl.innerHTML = "구글";
+      aEl.setAttribute("target", "_blank");
+      aEl.setAttribute("class", "green");
+      aEl.setAttribute("data-d", "naver");
+      console.log(aEl.dataset);
+      aEl.removeAttribute("class")
+    </script>
+  </body>
+</html>

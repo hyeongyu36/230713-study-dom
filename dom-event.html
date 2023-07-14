@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM event 객체</title>
+    <style>
+      #container {
+        margin: 30px auto;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="images/cup-1.png" alt="cup" id="cup" />
+    </div>
+    <script>
+      var cupImg = document.querySelector("#cup");
+      cupImg.onclick = function (event) {
+        // alert("컵클릭");
+        // alert(
+        //   `이벤트 유형 : ${event.type} , 이벤트 발생 위치 : X값- ${event.pageX} / Y값- ${event.pageY}`
+        // );
+        alert(`클릭한 이미지 파일 : ${this.src}`)
+      };
+    </script>
+  </body>
+</html>

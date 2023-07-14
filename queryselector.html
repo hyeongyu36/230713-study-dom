@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>query 메서드</title>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="text">잠와요</div>
+      <div class="text">잠와요2</div>
+    </div>
+    <div class="box2">
+      <div class="text">잠와요ㅠㅠ3</div>
+      <div class="text">아싸호랑나비</div>
+    </div>
+    <script>
+      var qu1 = document.querySelector(".box1");
+      console.log(qu1);
+      var quA = document.querySelectorAll(".box1 .text");
+      console.log(quA);
+      var getC = document.getElementsByClassName("box1")[0].children;
+      console.log(getC);
+    </script>
+  </body>
+</html>

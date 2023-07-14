@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>콘테츠 가져오기</title>
+  </head>
+  <body>
+    <p id="title">ㅎ ㅏ2루, <span style="display: none;"> Javascript!</span></p>
+    <script>
+      document.getElementById("title").textContent;
+      // textContent:글자를 다 보여줌(스타일상관x)
+      document.getElementById("title").innerText;
+      // tinnerText:보이는 텍스트만 보여줌
+      document.getElementById("title").innerHTML;
+      console.log(document.getElementById("title").textContent);
+      console.log(document.getElementById("title").innerText);
+      console.log(document.getElementById("title").innerHTML);
+    </script>
+  </body>
+</html>
